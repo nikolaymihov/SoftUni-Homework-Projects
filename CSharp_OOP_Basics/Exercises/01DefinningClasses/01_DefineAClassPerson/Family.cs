@@ -7,13 +7,13 @@
     class Family
     {
         private List<Person> people;
-
-        public List<Person> People { get; set; } 
-
+        
         public Family()
         {
             this.people = new List<Person>();
         }
+
+        public List<Person> People { get; set; }
 
         public void AddMember(Person member)
         {
@@ -23,7 +23,7 @@
         public Person GetOldestMember()
         {
             return this.people
-                .OrderByDescending(m => m.Age)
+                .OrderByDescending(p => p.Age)
                 .FirstOrDefault();
         }
     }
