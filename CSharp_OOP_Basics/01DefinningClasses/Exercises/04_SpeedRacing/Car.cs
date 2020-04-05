@@ -13,13 +13,11 @@
 
         public Car() : this(null, 0, 1, 0)
         {
-
         }
 
         public Car(string model, double fuelAmount, double fuelConsumptionPerKilometer) 
             : this(model, fuelAmount, fuelConsumptionPerKilometer, 0)
         {
-
         }
 
         public Car(string model, double fuelAmount, double fuelConsumptionPerKilometer, double travelledDistance)
