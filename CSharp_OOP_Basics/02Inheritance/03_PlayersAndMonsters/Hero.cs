@@ -2,8 +2,10 @@
 
 namespace PlayersAndMonsters
 {
-    public class Hero
+    public abstract class Hero
     {
+        private const int HERO_MIN_LEVEL = 0;
+
         private string username;
         private int level;
 
@@ -21,14 +23,12 @@ namespace PlayersAndMonsters
             }
             private set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new InvalidOperationException("The username cannot be null.");
+                    throw new ArgumentException("The username cannot be null or empty.");
                 }
-                else 
-                {
-                    this.username = value;
-                }
+                
+                this.username = value;
             }
         }
 
@@ -40,14 +40,12 @@ namespace PlayersAndMonsters
             }
             private set 
             {
-                if (value < 0)
+                if (value < HERO_MIN_LEVEL)
                 {
-                    throw new InvalidOperationException("The level cannot be a negative number.");
+                    throw new ArgumentException("The level cannot be a negative number.");
                 }
-                else
-                {
-                    this.level = value;
-                }
+                
+                this.level = value;
             } 
         }
 

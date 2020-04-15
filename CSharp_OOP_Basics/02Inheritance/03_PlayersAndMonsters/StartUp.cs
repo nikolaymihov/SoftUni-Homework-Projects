@@ -45,8 +45,7 @@
                     hero = new BladeKnight(username, level);
                     break;
                 default:
-                    hero = new Hero(username, level);
-                    break;
+                    throw new InvalidOperationException("The type of the hero that you are trying to enter does not exist.");
             }
 
             return hero;
