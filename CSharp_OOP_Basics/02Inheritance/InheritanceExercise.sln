@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.Person", "P01.Person\P01.Person.csproj", "{19CD29BA-63BC-4402-A876-4D90E0480D44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Person", "P01.Person\01_Person.csproj", "{19CD29BA-63BC-4402-A876-4D90E0480D44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.Zoo", "P02.Zoo\P02.Zoo.csproj", "{670A8CF5-519C-44BC-838F-0AFFDA30BFC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Zoo", "P02.Zoo\02_Zoo.csproj", "{670A8CF5-519C-44BC-838F-0AFFDA30BFC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.PlayersAndMonsters", "P03.PlayersAndMonsters\P03.PlayersAndMonsters.csproj", "{BF1BFDE3-3321-4D20-B685-40E3CB517E1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_PlayersAndMonsters", "P03.PlayersAndMonsters\03_PlayersAndMonsters.csproj", "{BF1BFDE3-3321-4D20-B685-40E3CB517E1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
