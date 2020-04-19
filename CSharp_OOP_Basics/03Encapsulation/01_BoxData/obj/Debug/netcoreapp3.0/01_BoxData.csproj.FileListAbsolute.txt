@@ -1,0 +1,13 @@
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\bin\Debug\netcoreapp3.0\01_BoxData.exe
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\bin\Debug\netcoreapp3.0\01_BoxData.deps.json
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\bin\Debug\netcoreapp3.0\01_BoxData.runtimeconfig.json
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\bin\Debug\netcoreapp3.0\01_BoxData.runtimeconfig.dev.json
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\bin\Debug\netcoreapp3.0\01_BoxData.dll
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\bin\Debug\netcoreapp3.0\01_BoxData.pdb
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\obj\Debug\netcoreapp3.0\01_BoxData.csprojAssemblyReference.cache
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\obj\Debug\netcoreapp3.0\01_BoxData.csproj.CoreCompileInputs.cache
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\obj\Debug\netcoreapp3.0\01_BoxData.AssemblyInfoInputs.cache
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\obj\Debug\netcoreapp3.0\01_BoxData.AssemblyInfo.cs
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\obj\Debug\netcoreapp3.0\01_BoxData.dll
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\obj\Debug\netcoreapp3.0\01_BoxData.pdb
+C:\Users\T420\source\repos\Encapsulation\01_BoxData\obj\Debug\netcoreapp3.0\01_BoxData.genruntimeconfig.cache
