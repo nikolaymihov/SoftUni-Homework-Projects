@@ -1,0 +1,28 @@
+﻿namespace FoodShortage
+{
+    public class Citizen : IIdentifiable, ICreature, IPerson, IBuyer
+    {
+        public Citizen(string name, int age, string id, string birthdate)
+        {
+            this.Name = name;
+            this.Age = age;
+            this.Id = id;
+            this.BirthDate = birthdate;
+        }
+
+        public string Name { get; }
+
+        public int Age { get; }
+
+        public string Id { get; }
+
+        public string BirthDate { get; }
+
+        public int Food { get; private set; } = 0;
+
+        public void BuyFood()
+        {
+            this.Food += 10;
+        }
+    }
+}
