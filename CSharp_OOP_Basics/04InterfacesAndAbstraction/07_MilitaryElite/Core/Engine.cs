@@ -6,23 +6,22 @@ namespace MilitaryElite
 {
     public class Engine
     {
-        private const string INVALID_CORPS_MSG = "The corps unit can be set only to Airforces or Marines and nothing else.";
+        private const string INVALID_CORPS_MSG = "The corps unit can be set only to \"Airforces\" or \"Marines\" and nothing else.";
+
+        private IReader reader;
+        private IWriter writer;
         private HashSet<Soldier> soldiers;
 
         public Engine(IReader reader, IWriter writer)
         {
-            this.Reader = reader;
-            this.Writer = writer;
+            this.reader = reader;
+            this.writer = writer;
             this.soldiers = new HashSet<Soldier>();
         }
 
-        public IReader Reader { get; private set; }
-
-        public IWriter Writer { get; private set; }
-
         public void Run()
         {
-            string soldierInput = this.Reader.ReadLine();
+            string soldierInput = this.reader.ReadLine();
 
             while (soldierInput.ToLower() != "end")
             {
@@ -62,12 +61,12 @@ namespace MilitaryElite
                 {
                 }
 
-                soldierInput = this.Reader.ReadLine();
+                soldierInput = this.reader.ReadLine();
             }
 
             foreach (Soldier soldier in soldiers)
             {
-                this.Writer.WriteLine(soldier.ToString());
+                this.writer.WriteLine(soldier.ToString());
             }
         }
 
