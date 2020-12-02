@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using P01_EmployeesFullInfo.Models;
 
-using P01_EmployeesFullInfo.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace P01_EmployeesFullInfo.Data
 {
