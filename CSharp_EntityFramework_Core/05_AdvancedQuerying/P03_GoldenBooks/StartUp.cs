@@ -14,27 +14,30 @@ namespace BookShop
             var dbContext = new BookShopContext();
             //DbInitializer.ResetDatabase(dbContext);
 
-            string ageRestriction = Console.ReadLine();
-
-            string books = GetBooksByAgeRestriction(ageRestriction, dbContext);
+            string books = GetGoldenBooks(dbContext);
 
             Console.WriteLine(books);
         }
 
-        public static string GetBooksByAgeRestriction(string command, BookShopContext context)
+        public static string GetGoldenBooks(BookShopContext context)
         {
             StringBuilder output = new StringBuilder();
 
             var bookTitles = context.Books
                                     .AsEnumerable()
-                                    .Where(b => b.AgeRestriction.ToString().ToLower() == command.ToLower())
-                                    .Select(b => b.Title)
-                                    .OrderBy(b => b)
+                                    .Where(b => b.EditionType.ToString().ToLower() == "gold")
+                                    .Where(b => b.Copies < 5000)
+                                    .Select(b => new 
+                                    { 
+                                        b.BookId,
+                                        b.Title
+                                    })
+                                    .OrderBy(b => b.BookId)
                                     .ToList();
 
             foreach (var book in bookTitles)
             {
-                output.AppendLine(book);
+                output.AppendLine(book.Title);
             }
 
             return output.ToString().TrimEnd();
