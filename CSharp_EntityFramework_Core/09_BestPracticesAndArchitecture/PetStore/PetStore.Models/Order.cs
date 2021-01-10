@@ -21,7 +21,7 @@ namespace PetStore.Models
         public string Id { get; set; }
 
         [Required]
-        [MinLength(GlobalConstants.TownNameMingLength)]
+        [MinLength(GlobalConstants.TownNameMinLength)]
         public string Town { get; set; }
 
         [Required]

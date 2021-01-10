@@ -19,14 +19,14 @@
         public const int ClientProductMaxQuantity = 1000;
 
         //Order
-        public const int TownNameMingLength = 3;
-        public const int TownNameMaxLenght = 50;
+        public const int TownNameMinLength = 3;
+        public const int TownNameMaxLength = 50;
         public const int AddressTextMinLength = 10;
         public const int AddressTextMaxLength = 100;
 
         //Pet
         public const int PetNameMingLength = 3;
-        public const int PetnNameMaxLenght = 50;
+        public const int PetnNameMaxLength = 50;
         public const int PetMinAge = 0;
         public const int PetMaxAge = 200;
 
