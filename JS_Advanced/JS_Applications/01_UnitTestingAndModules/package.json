@@ -1,0 +1,16 @@
+{
+  "name": "01.unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "02.FunctionsToTest.js",
+  "scripts": {
+    "start": "node 02.FunctionsToTest.js",
+    "test": "mocha tests/**/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
