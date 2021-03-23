@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const lookupChar = require('../02.FunctionsToTest').lookupChar;
+const lookupChar = require('../02.FunctionalitiesToTest').lookupChar;
 const ERROR_MESSAGE = 'Function did not return the correct result!';
 
 describe('lookupChar negative tests', () => {

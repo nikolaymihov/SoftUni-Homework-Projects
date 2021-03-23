@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const isOddOrEven = require('../02.FunctionsToTest').isOddOrEven;
+const isOddOrEven = require('../02.FunctionalitiesToTest').isOddOrEven;
 const ERROR_MESSAGE = 'Function did not return the correct result!';
 
 describe('isOddOrEven negative tests', () => {
