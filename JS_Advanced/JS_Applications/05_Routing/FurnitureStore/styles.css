@@ -1,0 +1,19 @@
+.container {
+    display: none;
+}
+
+.site-nav li {
+    display: inline;
+    margin: 5px;
+}
+
+.image-container img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    height: 200px;
+}
+
+div .card-body {
+    text-align: center;
+}
