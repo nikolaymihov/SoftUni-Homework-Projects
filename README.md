@@ -1,5 +1,5 @@
 # SoftUni-Homework-Projects
 
-<img src="Images/SoftUniLogo.png" width = "1000">
+<img src="Images/SoftUniLogo.png" width = "800">
 
 Master repository with all the exercices from the different modules and courses from my study at the Software University - www.softuni.bg.
