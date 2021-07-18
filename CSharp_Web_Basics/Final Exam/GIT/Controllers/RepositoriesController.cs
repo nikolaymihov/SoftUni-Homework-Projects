@@ -9,7 +9,7 @@
     using MyWebServer.Http;
     using MyWebServer.Controllers;
 
-    using static GIT.Data.DataConstants;
+    using static Data.DataConstants;
 
     public class RepositoriesController : Controller
     {
