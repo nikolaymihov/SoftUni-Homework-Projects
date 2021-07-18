@@ -4,7 +4,7 @@
     using Microsoft.EntityFrameworkCore;
 
     using Git.Data;
-
+    using Services;
     using MyWebServer;
     using MyWebServer.Controllers;
     using MyWebServer.Results.Views;
@@ -18,6 +18,8 @@
                     .MapControllers())
                 .WithServices(services => services
                     .Add<ApplicationDbContext>()
+                    .Add<IValidator, Validator>()
+                    .Add<IPasswordHasher, PasswordHasher>()
                     .Add<IViewEngine, CompilationViewEngine>())
                 .WithConfiguration<ApplicationDbContext>(context => context
                     .Database.Migrate())

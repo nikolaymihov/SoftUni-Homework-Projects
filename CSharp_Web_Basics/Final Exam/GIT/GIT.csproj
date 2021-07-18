@@ -38,6 +38,9 @@
 		<None Update="Views\Repositories\All.cshtml">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
+		<None Update="Views\Error.cshtml">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 		<None Update="Views\Shared\_Layout.cshtml">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
@@ -152,11 +155,6 @@
 		<None Update="wwwroot\vendor\prism\prism.js">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Models\" />
-	  <Folder Include="Services\" />
 	</ItemGroup>
 
 </Project>
