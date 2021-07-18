@@ -9,7 +9,7 @@
         {
             if (this.User.IsAuthenticated)
             {
-                return Redirect("/Cars/All");
+                return Redirect("/Repositories/All");
             }
 
             return View();
