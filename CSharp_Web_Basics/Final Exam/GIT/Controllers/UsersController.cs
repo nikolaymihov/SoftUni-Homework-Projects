@@ -1,4 +1,6 @@
-﻿namespace GIT.Controllers
+﻿using GIT.Models.Users;
+
+namespace GIT.Controllers
 {
     using System.Linq;
 
@@ -62,5 +64,34 @@
         }
 
         public HttpResponse Login() => View();
+
+        [HttpPost]
+        public HttpResponse Login(LoginUserFormModel model)
+        {
+            var hashedPassword = this.passwordHasher.HashPassword(model.Password);
+
+            var userId = this.data
+                .Users
+                .Where(u => u.Username == model.Username && u.Password == hashedPassword)
+                .Select(u => u.Id)
+                .FirstOrDefault();
+
+            if (userId == null)
+            {
+                return Error("Username and password combination is not valid.");
+            }
+
+            this.SignIn(userId);
+
+            return Redirect("/Repositories/All");
+        }
+
+        [Authorize]
+        public HttpResponse Logout()
+        {
+            this.SignOut();
+
+            return Redirect("/");
+        }
     }
 }

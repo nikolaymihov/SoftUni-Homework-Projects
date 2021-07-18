@@ -5,6 +5,7 @@
     using System.Text.RegularExpressions;
 
     using Git.Models.Users;
+    using Models.Repositories;
     using static Data.DataConstants;
 
     public class Validator : IValidator
@@ -36,6 +37,23 @@
             if (user.Password != user.ConfirmPassword)
             {
                 errors.Add("Password and its confirmation are different.");
+            }
+
+            return errors;
+        }
+
+        public ICollection<string> ValidateRepository(CreateRepositoryFormModel model)
+        {
+            var errors = new List<string>();
+
+            if (model.Name == null || model.Name.Length < RepositoryNameMinLength || model.Name.Length > RepositoryNameMaxLength)
+            {
+                errors.Add($"Repository name '{model.Name}' is not valid. It must be between {RepositoryNameMinLength} and {RepositoryNameMaxLength} characters long.");
+            }
+
+            if (model.RepositoryType != RepositoryPublicType && model.RepositoryType != RepositoryPrivateType)
+            {
+                errors.Add($"Repository type can be either '{RepositoryPublicType}' or '{RepositoryPrivateType}'.");
             }
 
             return errors;
